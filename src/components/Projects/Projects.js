@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import dice from "../../Assets/Projects/dice.jpg";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ttos from "../../Assets/Projects/ttos.png";
+import site from "../../Assets/Projects/site.webp";
+import alexa from "../../Assets/Projects/alexa.avif";
+import mouse from "../../Assets/Projects/mouse.jpg";
+import ar from "../../Assets/Projects/ar.png";
 import Experience from "./Experience";
 
 function Projects() {
@@ -23,20 +24,23 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+
+        <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={site}
               isBlog={false}
-              title="ARDjango"
-              description="The ARDjango project is a web-based game that combines augmented reality technology with a word jumble game. It allows users to play a word jumble game in an augmented reality environment. The game presents jumbled letters on the screen, and the user needs to pick the correct letters and place them in the correct order to form a word. The game utilizes the MindAR image processing library and three.js library for the augmented reality and 3D rendering functionality."
-              ghLink="https://github.com/CharanyaSatpute/ARDjango"
-              
+              title="E-Commerce Site"
+              description="Shopper is your ultimate destination for effortless online shopping. Powered by React technology, our platform offers a seamless browsing experience and ensures swift navigation through our diverse collection of [Product Category]. Whether you're searching for everyday essentials or special gifts, [Your E-commerce Site Name] provides a user-friendly interface designed to enhance your shopping journey. Explore our curated selection, enjoy exclusive deals, and discover a new standard of convenience with every click."
+              ghLink="https://github.com/CharanyaSatpute/EcommerceSite"
+              demoLink="https://ecommercesite-dh4k.onrender.com/"
             />
           </Col>
 
+          
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ttos}
               isBlog={false}
               title="Text-To-Speech"
               description="This project is a Text to Speech Converter with a user-friendly web interface. It allows users to convert text into speech and provides additional features such as real-time listening and the option to download the generated audio file. The project is built using HTML, CSS, and JavaScript."
@@ -47,7 +51,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={dice}
               isBlog={false}
               title="Dice Game"
               description="Welcome to the Two Dice Game! This is a simple command-line game where two dice are rolled, and the winner is determined based on the values rolled. Play against another player and see who wins!"
@@ -58,34 +62,34 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ar}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="ARDjango"
+              description="The ARDjango project is a web-based game that combines augmented reality technology with a word jumble game. It allows users to play a word jumble game in an augmented reality environment. The game presents jumbled letters on the screen, and the user needs to pick the correct letters and place them in the correct order to form a word. The game utilizes the MindAR image processing library and three.js library for the augmented reality and 3D rendering functionality."
+              ghLink="https://github.com/CharanyaSatpute/ARDjango"
+              
             />
           </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={alexa}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="My Alexa"
+              description="Welcome to my Personal Voice Assistant project! This Python-based assistant responds to voice commands and performs various tasks. It's a fun and interactive way to interact with your computer."
+              ghLink="https://github.com/CharanyaSatpute/My_Alexa"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={mouse}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Virtual Mouse"
+              description="This project is a Virtual Mouse system created using computer vision techniques. It allows users to control the mouse cursor on their computer screen by moving their hand in front of a webcam. The project utilizes Python, OpenCV, Mediapipe, and PyAutoGUI to achieve this functionality."
+              ghLink="https://github.com/CharanyaSatpute/Virtual_Mouse"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
